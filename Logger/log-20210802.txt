@@ -1,0 +1,30 @@
+03:47:20.634 +05:30 [INF] Application is starting...
+03:47:30.208 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+03:47:30.221 +05:30 [INF] Hosting environment: "Development"
+03:47:30.226 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+03:47:30.354 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+03:47:30.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 433.3355ms
+03:47:31.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+03:47:31.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.7177ms
+04:05:07.382 +05:30 [INF] Application is starting...
+04:05:11.428 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+04:05:11.453 +05:30 [INF] Hosting environment: "Development"
+04:05:11.457 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+04:05:11.497 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+04:05:11.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 288.0624ms
+04:08:36.333 +05:30 [INF] Application is starting...
+04:08:39.367 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+04:08:39.396 +05:30 [INF] Hosting environment: "Development"
+04:08:39.406 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+04:08:39.461 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+04:08:39.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 288.1949ms
+04:08:40.865 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+04:08:41.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 624.6750ms
+04:09:32.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/WeatherForecast - -
+04:09:32.721 +05:30 [INF] Executing endpoint '"HotelListing.Controllers.WeatherForecastController.Get (HotelListing)"'
+04:09:32.756 +05:30 [INF] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[HotelListing.WeatherForecast] Get()" on controller "HotelListing.Controllers.WeatherForecastController" ("HotelListing").
+04:10:09.454 +05:30 [INF] weeather forecast started
+04:11:27.007 +05:30 [INF] Executing "ObjectResult", writing value of type '"HotelListing.WeatherForecast[]"'.
+04:11:27.040 +05:30 [INF] Executed action "HotelListing.Controllers.WeatherForecastController.Get (HotelListing)" in 114276.5242ms
+04:11:27.042 +05:30 [INF] Executed endpoint '"HotelListing.Controllers.WeatherForecastController.Get (HotelListing)"'
+04:11:27.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/WeatherForecast - - - 200 - application/json;+charset=utf-8 114407.9471ms

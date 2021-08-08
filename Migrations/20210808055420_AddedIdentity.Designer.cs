@@ -4,14 +4,16 @@ using HotelListing.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace HotelListing.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20210808055420_AddedIdentity")]
+    partial class AddedIdentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -111,19 +113,19 @@ namespace HotelListing.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Sri Lanka",
-                            ShortName = "SL"
-                        },
-                        new
-                        {
-                            Id = 2,
                             Name = "India",
                             ShortName = "IN"
                         },
                         new
                         {
+                            Id = 2,
+                            Name = "Sri Lanka",
+                            ShortName = "SL"
+                        },
+                        new
+                        {
                             Id = 3,
-                            Name = "United Kingdom",
+                            Name = "England",
                             ShortName = "UK"
                         });
                 });
@@ -154,7 +156,7 @@ namespace HotelListing.Migrations
                         new
                         {
                             Id = 1,
-                            Address = "Colombo",
+                            Address = "Colombo 7",
                             CountryId = 1,
                             Name = "Cinnomon"
                         },
@@ -170,7 +172,14 @@ namespace HotelListing.Migrations
                             Id = 3,
                             Address = "Kolkata",
                             CountryId = 2,
-                            Name = "Mou - Mou"
+                            Name = "Moumita"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Address = "London",
+                            CountryId = 3,
+                            Name = "Royal DD"
                         });
                 });
 
@@ -199,22 +208,6 @@ namespace HotelListing.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "66885bbe-f2f8-4052-a87e-085ce535b22e",
-                            ConcurrencyStamp = "1f1c162a-9396-4ad7-acab-b2f817d60c80",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        },
-                        new
-                        {
-                            Id = "7e37edef-7962-42f9-a471-e9d5f8c513e9",
-                            ConcurrencyStamp = "7197ccac-0e0b-4a1f-9c05-72fac932179e",
-                            Name = "Administrator",
-                            NormalizedName = "ADMINISTRATOR"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

@@ -1,4 +1,6 @@
-﻿using HotelListing.Data;
+﻿using HotelListing.Configurations.Entities;
+using HotelListing.Data;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace HotelListing.Data
 {
-    public class DatabaseContext : DbContext
+    public class DatabaseContext : IdentityDbContext<ApiUser>
     {
         public DatabaseContext(DbContextOptions options) : base(options)
         {
@@ -19,63 +21,12 @@ namespace HotelListing.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
 
-            builder.Entity<Country>().HasData(
-                   new Country
-                   { 
-                       Id = 1,
-                       Name = "India",
-                       ShortName = "IN"
-                   },
-                   new Country
-                   {
-                       Id = 2,
-                       Name = "Sri Lanka",
-                       ShortName = "SL"
 
-                   },
-                   new Country
-                   {
-                       Id = 3,
-                       Name = "England",
-                       ShortName = "UK"
-
-                   }
-                );
-
-            builder.Entity<Hotel>().HasData(
-                   new Hotel
-                   {
-                       Id = 1,
-                       Name = "Cinnomon",
-                       Address = "Colombo 7",
-                       CountryId = 1
-                   },
-                   new Hotel
-                   {
-                       Id = 2,
-                       Name = "Jetwing",
-                       Address = "Galle",
-                       CountryId = 1
-
-                   },
-                   new Hotel
-                   {
-                       Id = 3,
-                       Name = "Moumita",
-                       Address = "Kolkata",
-                       CountryId = 2
-
-                   },
-                   new Hotel
-                   {
-                       Id = 4,
-                       Name = "Royal DD",
-                       Address = "London",
-                       CountryId = 3
-
-                   }
-                );
+            builder.ApplyConfiguration(new CountryConfiguration());
+            builder.ApplyConfiguration(new HotelConfiguration());
+            builder.ApplyConfiguration(new RoleConfiguration());
 
         }
     }

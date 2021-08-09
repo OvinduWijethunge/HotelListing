@@ -82,3 +82,41 @@
 13:51:58.097 +05:30 [INF] Executed action "HotelListing.Controllers.AccountController.Register (HotelListing)" in 18529.6775ms
 13:51:58.098 +05:30 [INF] Executed endpoint '"HotelListing.Controllers.AccountController.Register (HotelListing)"'
 13:51:58.107 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44339/api/Account/register application/json-patch+json 142 - 202 0 - 18542.2085ms
+15:56:13.873 +05:30 [INF] Application is starting...
+15:56:19.852 +05:30 [INF] User profile is available. Using '"C:\\Users\\Acer\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+15:56:21.266 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+15:56:21.266 +05:30 [INF] Hosting environment: "Development"
+15:56:21.266 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+15:56:21.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+15:56:21.740 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 314.8872ms
+15:56:23.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+15:56:23.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 371.0134ms
+15:57:53.936 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44339/api/Hotel application/json-patch+json 57
+15:57:53.957 +05:30 [INF] CORS policy execution successful.
+15:57:54.059 +05:30 [INF] Executing endpoint '"HotelListing.Controllers.HotelController.CreateHotel (HotelListing)"'
+15:57:54.154 +05:30 [INF] Route matched with "{action = \"CreateHotel\", controller = \"Hotel\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateHotel(HotelListing.Models.CreateHotelDTO)" on controller "HotelListing.Controllers.HotelController" ("HotelListing").
+15:57:58.176 +05:30 [INF] Entity Framework Core "5.0.8" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+15:58:04.755 +05:30 [INF] Executed DbCommand ("1,126"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (Size = 4000)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SET NOCOUNT ON;\r\nINSERT INTO [Hotels] ([Address], [CountryId], [Name])\r\nVALUES (@p0, @p1, @p2);\r\nSELECT [Id]\r\nFROM [Hotels]\r\nWHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+15:58:04.928 +05:30 [INF] Executing "CreatedAtRouteResult", writing value of type '"HotelListing.Data.Hotel"'.
+15:58:05.201 +05:30 [INF] Executed action "HotelListing.Controllers.HotelController.CreateHotel (HotelListing)" in 11036.7737ms
+15:58:05.202 +05:30 [INF] Executed endpoint '"HotelListing.Controllers.HotelController.CreateHotel (HotelListing)"'
+15:58:05.226 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44339/api/Hotel application/json-patch+json 57 - 201 79 application/json;+charset=utf-8 11290.2265ms
+16:02:16.696 +05:30 [INF] Application is starting...
+16:02:21.597 +05:30 [INF] User profile is available. Using '"C:\\Users\\Acer\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+16:02:23.867 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+16:02:23.868 +05:30 [INF] Hosting environment: "Development"
+16:02:23.868 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+16:02:23.981 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+16:02:24.265 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 292.3734ms
+16:02:25.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+16:02:25.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 414.3225ms
+16:03:04.657 +05:30 [INF] Request starting HTTP/2 POST https://localhost:44339/api/Country application/json-patch+json 36
+16:03:04.669 +05:30 [INF] CORS policy execution successful.
+16:03:04.746 +05:30 [INF] Executing endpoint '"HotelListing.Controllers.CountryController.CreateCountry (HotelListing)"'
+16:03:04.880 +05:30 [INF] Route matched with "{action = \"CreateCountry\", controller = \"Country\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCountry(HotelListing.Models.CreateCountryDTO)" on controller "HotelListing.Controllers.CountryController" ("HotelListing").
+16:03:08.875 +05:30 [INF] Entity Framework Core "5.0.8" initialized '"DatabaseContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+16:03:12.301 +05:30 [INF] Executed DbCommand ("739"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000)"], CommandType='"Text"', CommandTimeout='30']"\r\n""SET NOCOUNT ON;\r\nINSERT INTO [Countries] ([Name], [ShortName])\r\nVALUES (@p0, @p1);\r\nSELECT [Id]\r\nFROM [Countries]\r\nWHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();"
+16:03:12.447 +05:30 [INF] Executing "CreatedAtRouteResult", writing value of type '"HotelListing.Data.Country"'.
+16:03:12.649 +05:30 [INF] Executed action "HotelListing.Controllers.CountryController.CreateCountry (HotelListing)" in 7758.6373ms
+16:03:12.651 +05:30 [INF] Executed endpoint '"HotelListing.Controllers.CountryController.CreateCountry (HotelListing)"'
+16:03:12.664 +05:30 [INF] Request finished HTTP/2 POST https://localhost:44339/api/Country application/json-patch+json 36 - 201 57 application/json;+charset=utf-8 8011.3545ms

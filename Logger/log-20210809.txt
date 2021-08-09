@@ -1,0 +1,27 @@
+06:54:26.717 +05:30 [INF] Application is starting...
+06:54:37.305 +05:30 [INF] User profile is available. Using '"C:\\Users\\Acer\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06:54:40.175 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+06:54:40.175 +05:30 [INF] Hosting environment: "Development"
+06:54:40.175 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+06:54:40.342 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+06:54:40.710 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 378.2016ms
+06:54:43.593 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+06:54:43.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 280.6035ms
+07:54:44.553 +05:30 [INF] Application is starting...
+07:54:51.775 +05:30 [INF] User profile is available. Using '"C:\\Users\\Acer\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+07:54:53.436 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+07:54:53.436 +05:30 [INF] Hosting environment: "Development"
+07:54:53.436 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+07:54:53.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+07:54:53.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 284.2476ms
+07:54:57.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+07:54:58.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 264.9914ms
+09:19:41.444 +05:30 [INF] Application is starting...
+09:19:45.061 +05:30 [INF] User profile is available. Using '"C:\\Users\\Acer\\AppData\\Local\\ASP.NET\\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+09:19:46.033 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+09:19:46.033 +05:30 [INF] Hosting environment: "Development"
+09:19:46.033 +05:30 [INF] Content root path: "E:\\DOT net\\HotelListing"
+09:19:46.128 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/index.html - -
+09:19:46.343 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/index.html - - - 200 - text/html;charset=utf-8 218.1214ms
+09:19:47.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - -
+09:19:47.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:44339/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.5105ms

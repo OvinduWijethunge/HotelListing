@@ -15,11 +15,6 @@ namespace HotelListing.Models
         [Required]
         [StringLength(maximumLength: 250, ErrorMessage = "Address Name Is Too Long")]
         public string Address { get; set; }
-
-        [Required]
-        [Range(1, 5)]
-        public double Rating { get; set; }
-
         
         public int CountryId { get; set; }
     }
